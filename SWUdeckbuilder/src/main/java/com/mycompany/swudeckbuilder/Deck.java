@@ -12,15 +12,26 @@ import java.util.ArrayList;
 public class Deck {
     private ArrayList<Card> deck = new ArrayList<>();
     
-    // addCard
-    
-    // removeCard
-    
-    // getCards
-    
+     public void addCard(Card card) {
+        deck.add(card);
+     }
+
+     public void drawHand() {
+         System.out.println(deck.subList(0, 5));
+         deck.subList(0, 5).clear();
+     }
+     
+     public void getCards() {
+        deck.forEach(card -> {
+            System.out.println(card);
+        });
+     }
+     
+    public void removeCard(Card card) {
+        deck.remove(card);
+     }
     // shuffle 
     
-    // drawHand
     
     // draw
     
